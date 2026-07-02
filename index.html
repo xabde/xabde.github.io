@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fr" id="html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-key="meta.title">Bajji Abderrahim — Portfolio DevOps &amp; Full-Stack</title>
+  <meta name="description" data-key="meta.description" content="Portfolio de Bajji Abderrahim, étudiant ingénieur DevOps et développeur Full-Stack basé à Casablanca — projets web, IA et cloud.">
+
+ 
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0c12'/%3E%3Ctext x='50' y='66' font-size='42' font-family='sans-serif' font-weight='700' fill='%238b7bff' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (icônes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Si JavaScript est désactivé, on affiche directement le contenu (pas d'animation au scroll) -->
+  <noscript><style>.reveal { opacity: 1 !important; transform: none !important; }</style></noscript>
+</head>
+<body>
+
+  
+  <div class="bg-decor" aria-hidden="true">
+    <span class="bg-decor__blob bg-decor__blob--1"></span>
+    <span class="bg-decor__blob bg-decor__blob--2"></span>
+    <span class="bg-decor__blob bg-decor__blob--3"></span>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">Abde<span class="nav__logo-cursor">_</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link" data-nav data-key="nav.home">Accueil</a>
+        <a href="#about" class="nav__link" data-nav data-key="nav.about">À propos</a>
+        <a href="#skills" class="nav__link" data-nav data-key="nav.skills">Compétences</a>
+        <a href="#projects" class="nav__link" data-nav data-key="nav.projects">Projets</a>
+        <a href="#certifications" class="nav__link" data-nav data-key="nav.certifications">Certifications</a>
+        <a href="#journey" class="nav__link" data-nav data-key="nav.journey">Parcours</a>
+        <a href="#contact" class="nav__link" data-nav data-key="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Sélecteur de langue FR / EN -->
+      <div class="lang-switch" role="group" data-key-aria="aria.langGroup" aria-label="Choix de la langue">
+        <button type="button" class="lang-switch__btn" data-lang="fr" id="langFr">FR</button>
+        <button type="button" class="lang-switch__btn" data-lang="en" id="langEn">EN</button>
+      </div>
+
+      <a href="#contact" class="btn btn--gradient btn--sm nav__cta"><span data-key="nav.cta">Me contacter</span></a>
+
+      <button class="nav__toggle" id="navToggle" data-key-aria="aria.openMenu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <p class="eyebrow hero__eyebrow" data-key="hero.eyebrow">//  casablanca, maroc</p>
+        <h1 class="hero__name">Bajji <span class="grad-text">Abderrahim</span></h1>
+
+        <p class="hero__role">
+          <span id="typewriter" class="hero__typewriter"></span><span class="hero__cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero__desc" data-key="hero.desc">Je conçois, développe et déploie des applications web robustes — du code à l'infrastructure qui le fait tourner.</p>
+
+        <div class="hero__status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span data-key="hero.status">Ouvert aux opportunités professionnelles</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--gradient"><span data-key="hero.ctaProjects">Voir mes projets</span></a>
+
+         
+          <a href="AbdeBajjiCV.pdf" target="_blank" download class="btn btn--glass">
+            <i class="fa-solid fa-download"></i><span data-key="hero.ctaCv">Télécharger mon CV</span>
+          </a>
+
+          <a href="#contact" class="link-arrow">
+            <span data-key="hero.ctaContact">Me contacter</span> <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" data-key-aria="aria.scrollNext" aria-label="Défiler vers la section suivante">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ============ À PROPOS ============ -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+
+        <div class="about__text reveal">
+          <p class="eyebrow" data-key="about.eyebrow">// à propos</p>
+          <h2 class="section__title" data-key="about.title">Du code à l'infrastructure qui le fait tourner</h2>
+
+          <p data-key="about.p1">Je suis étudiant en ingénierie DevOps, avec une vision globale des systèmes d'information : du code applicatif à l'infrastructure qui le fait tourner. Mon terrain de jeu va du développement full-stack à la conception de bases de données, jusqu'à l'intégration de solutions d'intelligence artificielle.</p>
+
+          <p data-key="about.p2">Rigoureux et orienté solutions, j'aime comprendre un système dans son ensemble avant d'en optimiser une partie — un pipeline de déploiement, une architecture d'API ou un modèle de machine learning. Je collabore volontiers en équipe technique, avec une approche agile, pour livrer des projets qui tiennent la route en production.</p>
+
+          <div class="tag-row">
+            <span class="tag" data-key="about.tag1">Full-Stack</span>
+            <span class="tag" data-key="about.tag2">DevOps &amp; Cloud</span>
+            <span class="tag" data-key="about.tag3">IA &amp; Machine Learning</span>
+          </div>
+
+          <div class="about__actions">
+           
+            <a href="AbdeBajjiCV.pdf" target="_blank" download class="btn btn--gradient">
+              <i class="fa-solid fa-download"></i><span data-key="about.cta">Télécharger mon CV</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Carte de profil en verre — élément signature de la page -->
+        <div class="profile-card reveal">
+          <div class="profile-card__photo">
+            <span class="profile-card__initials">BA</span>
+           
+            <img src="assets/profile-photo.jpeg" alt="Photo de profil de Bajji Abderrahim" onerror="this.style.display='none'">
+          </div>
+
+          <div class="profile-card__info">
+            <h3>Bajji Abderrahim</h3>
+            <p class="profile-card__role" data-key="about.card.role">Étudiant Ingénieur DevOps</p>
+
+            <div class="profile-card__stats">
+              <div><span data-key="about.card.locationLabel">Localisation</span><strong>Casablanca, MA</strong></div>
+              <div><span data-key="about.card.formationLabel">Formation</span><strong data-key="about.card.formationValue">Master DevOps &amp; Big Data</strong></div>
+              <div><span data-key="about.card.stackLabel">Stack</span><strong data-key="about.card.stackValue">Full-Stack · Cloud · IA</strong></div>
+            </div>
+
+            <div class="profile-card__status">
+              <span class="status-dot"></span><span data-key="about.card.status">Ouvert aux opportunités professionnelles</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <p class="eyebrow reveal" data-key="skills.eyebrow">// compétences</p>
+        <h2 class="section__title reveal" data-key="skills.title">Une pile technique pensée de bout en bout</h2>
+
+        <div class="skills__grid">
+
+          <article class="skill-card reveal">
+            <div class="skill-card__header">
+              <span class="skill-card__icon"><i class="fa-solid fa-cloud"></i></span>
+              <h3 data-key="skills.cat1.title">DevOps &amp; Cloud</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li><i class="fa-brands fa-aws"></i>AWS Data Engineering</li>
+              <li><i class="fa-solid fa-robot"></i>Microsoft Azure AI</li>
+              <li><i class="fa-brands fa-redhat"></i>RedHat System Admin.</li>
+              <li><i class="fa-brands fa-linux"></i>Linux</li>
+              <li><i class="fa-solid fa-code-branch"></i><span data-key="skills.cat1.item5">Intégration continue (CI/CD)</span></li>
+              <li><i class="fa-solid fa-people-group"></i>Scrum / Agile</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__header">
+              <span class="skill-card__icon"><i class="fa-solid fa-display"></i></span>
+              <h3>Front-End</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li><i class="fa-brands fa-angular"></i>Angular</li>
+              <li><i class="fa-brands fa-react"></i>React.js</li>
+              <li><i class="fa-solid fa-mobile-screen"></i>Flutter (Dart)</li>
+              <li><i class="fa-brands fa-js"></i>JavaScript</li>
+              <li><i class="fa-brands fa-html5"></i>HTML5 / CSS3</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__header">
+              <span class="skill-card__icon"><i class="fa-solid fa-server"></i></span>
+              <h3>Back-End</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li><i class="fa-brands fa-java"></i>Spring Boot</li>
+              <li><i class="fa-brands fa-node-js"></i>Express.js</li>
+              <li><i class="fa-brands fa-laravel"></i>Laravel</li>
+              <li><i class="fa-solid fa-key"></i>JWT &amp; Spring Security</li>
+              <li><i class="fa-solid fa-database"></i>MySQL · MongoDB · Redis</li>
+              <li><i class="fa-solid fa-layer-group"></i>JPA</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__header">
+              <span class="skill-card__icon"><i class="fa-solid fa-brain"></i></span>
+              <h3 data-key="skills.cat4.title">IA &amp; Data</h3>
+            </div>
+            <ul class="skill-card__list">
+              <li><i class="fa-solid fa-magnifying-glass-chart"></i>RAG (Retrieval Augmented Generation)</li>
+              <li><i class="fa-brands fa-python"></i>Python</li>
+              <li><i class="fa-solid fa-chart-line"></i>Scikit-Learn</li>
+              <li><i class="fa-solid fa-table"></i>Pandas &amp; NumPy</li>
+              <li><i class="fa-solid fa-diagram-project"></i>Machine Learning</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="languages-strip reveal">
+          <span class="languages-strip__label" data-key="skills.languagesLabel">Langages</span>
+          <div class="chip-row">
+            <span class="chip">C</span>
+            <span class="chip">Python</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Java</span>
+            <span class="chip">PHP</span>
+            <span class="chip">Dart</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow reveal" data-key="projects.eyebrow">// projets</p>
+        <h2 class="section__title reveal" data-key="projects.title">Projets réalisés</h2>
+
+        <div class="projects__grid">
+
+          <!-- Projet 1 : Système de Gestion Bancaire -->
+          <article class="project-card reveal">
+            <div class="project-card__media">
+             
+              <img src="assets/img-projet1.png" alt="Aperçu de l'application Système de Gestion Bancaire" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="media-placeholder"><i class="fa-solid fa-image"></i>assets/img-projet1.png</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Système de Gestion Bancaire</h3>
+              <p data-key="projects.item1.desc">Application full-stack sécurisée de gestion de comptes bancaires, avec API protégées et authentification via JWT et Spring Security.</p>
+              <div class="chip-row">
+                <span class="chip chip--tech">Spring Boot</span>
+                <span class="chip chip--tech">Angular</span>
+                <span class="chip chip--tech">JWT</span>
+                <span class="chip chip--tech">JPA</span>
+              </div>
+              
+              <a href="https://github.com/xabde/Architecture-JEE/tree/main/Projet%20Spring%20Angular%20JWT%20Spring%20Security" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i><span data-key="projects.linkText">Voir le repo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 2 : Chatbot IA & Telegram -->
+          <article class="project-card reveal">
+            <div class="project-card__media">
+             
+              <img src="assets/img-projet2.png" alt="Aperçu du Chatbot IA intégré à Telegram" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="media-placeholder"><i class="fa-solid fa-image"></i>assets/img-projet2.png</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Chatbot IA &amp; Intégration Telegram</h3>
+              <p data-key="projects.item2.desc">Agent conversationnel basé sur une architecture RAG (Retrieval-Augmented Generation), déployé via Telegram pour automatiser les réponses à partir de données spécifiques.</p>
+              <div class="chip-row">
+                <span class="chip chip--tech">Python</span>
+                <span class="chip chip--tech">RAG</span>
+                <span class="chip chip--tech">Telegram API</span>
+              </div>
+              
+              <a href="https://github.com/xabde/Architecture-JEE/tree/main/Projet%20Spring%20Angular%20JWT%20Spring%20Security/Partie%204%20(CHATBOT)" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i><span data-key="projects.linkText">Voir le repo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 3 : intelliRail -->
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              
+              <img src="assets/img-projet3.png" alt="Aperçu de la plateforme intelliRail" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="media-placeholder"><i class="fa-solid fa-image"></i>assets/img-projet3.png</span>
+            </div>
+            <div class="project-card__body">
+              <h3>intelliRail</h3>
+              <p data-key="projects.item3.desc">Plateforme IoT de collecte de données capteurs en temps réel, avec un modèle prédictif pour estimer les horaires d'arrivée des trains.</p>
+              <div class="chip-row">
+                <span class="chip chip--tech">IoT</span>
+                <span class="chip chip--tech">Angular</span>
+                <span class="chip chip--tech">Express</span>
+                <span class="chip chip--tech">Flutter</span>
+                <span class="chip chip--tech">Python</span>
+              </div>
+              <a href="https://github.com/xabde/intellirail" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i><span data-key="projects.linkText">Voir le repo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 4 : Clinique.ma -->
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              
+              <img src="assets/img-projet4.png" alt="Aperçu de la plateforme Clinique.ma" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="media-placeholder"><i class="fa-solid fa-image"></i>assets/img-projet4.png</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Clinique.ma</h3>
+              <p data-key="projects.item4.desc">Plateforme de prise de rendez-vous et de gestion des agendas médicaux, pensée pour simplifier l'accès aux soins au Maroc.</p>
+              <div class="chip-row">
+                <span class="chip chip--tech">Angular</span>
+                <span class="chip chip--tech">Express</span>
+                <span class="chip chip--tech">MySQL</span>
+              </div>
+              <a href="https://github.com/xabde/clinique.ma" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i><span data-key="projects.linkText">Voir le repo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projet 5 : Smart Fridge (bonus, tiré du CV) -->
+          <article class="project-card reveal">
+            <div class="project-card__media">
+              
+              <img src="assets/img-projet5.png" alt="Aperçu du projet Smart Fridge" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="media-placeholder"><i class="fa-solid fa-image"></i>assets/img-projet5.png</span>
+            </div>
+            <div class="project-card__body">
+              <h3>Smart Fridge</h3>
+              <p data-key="projects.item5.desc">Modèle de régression en Python pour prédire les dates de réapprovisionnement des produits et automatiser la gestion des stocks.</p>
+              <div class="chip-row">
+                <span class="chip chip--tech">Python</span>
+                <span class="chip chip--tech">Scikit-Learn</span>
+                <span class="chip chip--tech">Pandas</span>
+              </div>
+              <a href="https://github.com/xabde/Smart-Fridge-AI" target="_blank" rel="noopener" class="project-card__link">
+                <i class="fa-brands fa-github"></i><span data-key="projects.linkText">Voir le repo</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Carte "plus de projets" -->
+          <article class="project-card project-card--more reveal">
+            <div class="project-card__more-inner">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3 data-key="projects.more.title">Explorer plus de projets</h3>
+              <p data-key="projects.more.desc">Retrouvez l'ensemble de mon travail sur GitHub.</p>
+              <a href="https://github.com/xabde" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+                <span data-key="projects.more.link">Voir le profil</span> <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section section--alt" id="certifications">
+      <div class="container">
+        <p class="eyebrow reveal" data-key="certifications.eyebrow">// certifications</p>
+        <h2 class="section__title reveal" data-key="certifications.title">Certifications &amp; badges</h2>
+
+        <div class="certs__grid">
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-aws.png -->
+              <img src="assets/badge-aws.png" alt="Badge de certification AWS Data Engineering" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>AWS Data Engineering</h3>
+            <p class="cert-card__issuer">Amazon Web Services</p>
+            
+            <a href="https://www.credly.com/badges/21ec3dde-c97a-4f32-9499-ac93e53d44ef/public_url" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-azure.png -->
+              <img src="assets/badge-azure.png" alt="Badge de certification Microsoft Azure AI" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>Microsoft Azure AI</h3>
+            <p class="cert-card__issuer">Microsoft</p>
+            <a href="https://www.linkedin.com/learning/certificates/cbe0b82dac8782276966b9d57b996754128063dfd48da50c36f429bf7792ac84?trk=share_certificate" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-cisco-data.png -->
+              <img src="assets/badge-cisco-data.png" alt="Badge de certification CISCO Data Analytics" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>CISCO Data Analytics</h3>
+            <p class="cert-card__issuer">Cisco</p>
+            <a href="https://www.credly.com/badges/d7c80d78-b317-4c1c-b620-d7959e750342/public_url" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-redhat.png -->
+              <img src="assets/badge-redhat.png" alt="Badge de certification RedHat System Administration" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>RedHat System Administration</h3>
+            <p class="cert-card__issuer">Red Hat</p>
+            <a href="https://www.credly.com/badges/51b43f60-ed54-46a6-95cc-b42ea6f6368d/public_url" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-cisco-os.png -->
+              <img src="assets/badge-cisco-os.png" alt="Badge de certification CISCO Operating Systems Basics" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>CISCO Operating Systems Basics</h3>
+            <p class="cert-card__issuer">Cisco</p>
+            <a href="https://www.credly.com/badges/be4221d8-ff42-47ed-89e9-58ba537c7853/public_url" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-cisco-linux.png -->
+              <img src="assets/badge-cisco-linux.png" alt="Badge de certification CISCO Linux" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>CISCO Linux</h3>
+            <p class="cert-card__issuer">Cisco</p>
+            <a href="https://www.credly.com/badges/d8901e19-b047-411b-8acc-93a2067437cf/public_url" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-scrum-alison.png -->
+              <img src="assets/badge-scrum-alison.png" alt="Badge de certification Scrum Product Owner (Alison)" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>Scrum Product Owner</h3>
+            <p class="cert-card__issuer">Alison</p>
+            <a href="https://alison.com/shop?course=3368&course_id=3368&utm_content=cta&utm_campaign=new_just_certified_cert_sale_days&utm_source=outbound%20marketing&utm_medium=email&utm_datesent=2026-01-24&score=88" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-scrum.png -->
+              <img src="assets/badge-scrum.png" alt="Badge de certification Scrum Product Owner" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>Scrum Product Owner</h3>
+            <p class="cert-card__issuer" data-key="certifications.item8.issuer">Certification agile</p>
+            <a href="https://www.linkedin.com/learning/certificates/903d49a21c81a48bcc60b1dda86e3accd4bce92415425578655e5c0ad6cb0e98?trk=share_certificate" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-card__badge">
+              <!-- Badge : assets/badge-cisco-english.png -->
+              <img src="assets/badge-cisco-english.png" alt="Badge de certification CISCO English for IT" loading="lazy" onerror="this.onerror=null;this.classList.add('is-missing')">
+              <span class="cert-card__badge-fallback"><i class="fa-solid fa-award"></i></span>
+            </div>
+            <h3>English for IT</h3>
+            <p class="cert-card__issuer">Cisco</p>
+            <a href="https://www.credly.com/badges/bcf55f17-8d63-49ca-8ddd-82dd4d2185d8/public_url" target="_blank" rel="noopener" class="cert-card__link"><span data-key="certifications.verify">Vérifier l'identifiant</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PARCOURS ============ -->
+    <section class="section" id="journey">
+      <div class="container">
+        <p class="eyebrow reveal" data-key="journey.eyebrow">// parcours</p>
+        <h2 class="section__title reveal" data-key="journey.title">Expériences &amp; formation</h2>
+
+        <div class="timeline">
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--edu"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item1.date">10/2025 — Aujourd'hui</span>
+              <h3 data-key="journey.item1.title">Master spécialisé, Ingénierie Informatique, Big Data et Cloud Computing</h3>
+              <p class="timeline__place">ENSET, Mohammedia</p>
+              <p data-key="journey.item1.desc">Ingénierie DevOps, ingénierie logicielle, Big Data et Data Science.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--exp"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item2.date">10/2024 — Aujourd'hui</span>
+              <h3 data-key="journey.item2.title">Agent Digital</h3>
+              <p class="timeline__place">Artser Maroc, Casablanca</p>
+              <p data-key="journey.item2.desc">Développeur et technicien IT ; gestion des campagnes publicitaires (Meta Ads Manager).</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--edu"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item3.date">10/2024 — 07/2025</span>
+              <h3 data-key="journey.item3.title">Licence Professionnelle, Développement Avancé pour l'IoT et les Systèmes Intelligents</h3>
+              <p class="timeline__place">Faculté des Sciences Ain Chock, Casablanca</p>
+              <p data-key="journey.item3.desc">Développement de systèmes embarqués, architecture de systèmes intelligents.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--exp"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item4.date">04/2024 — 08/2024</span>
+              <h3 data-key="journey.item4.title">Stage de fin d'étude</h3>
+              <p class="timeline__place">Geomtec, Casablanca</p>
+              <p data-key="journey.item4.desc">Réalisation du site web de l'entreprise ; management du projet IT de la conception au déploiement.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--edu"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item5.date">09/2022 — 07/2024</span>
+              <h3 data-key="journey.item5.title">Diplôme de Technicien Spécialisé, Développement Full Stack</h3>
+              <p class="timeline__place">OFPPT-ISTA NTIC 2 SM, Casablanca</p>
+              <p data-key="journey.item5.desc">Développement d'applications web modernes, gestion de bases de données.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--exp"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item6.date">11/2021 — 09/2022</span>
+              <h3 data-key="journey.item6.title">Télévente</h3>
+              <p class="timeline__place">ELMI CALL CENTER, Casablanca</p>
+              <p data-key="journey.item6.desc">Prise de rendez-vous B2C/B2B (thématique thermostat) ; sens du contact et de l'organisation.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item reveal">
+            <div class="timeline__marker timeline__marker--edu"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline__content">
+              <span class="timeline__date" data-key="journey.item7.date">10/2020 — 06/2021</span>
+              <h3 data-key="journey.item7.title">Baccalauréat scientifique, option Sciences Physiques et Chimie</h3>
+              <p class="timeline__place">Institut Bab Al Andalousse, Casablanca</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container contact__grid">
+
+        <div class="reveal">
+          <p class="eyebrow" data-key="contact.eyebrow">// contact</p>
+          <h2 class="section__title" data-key="contact.title">Discutons de votre prochain projet</h2>
+          <p class="contact__intro" data-key="contact.intro">Une question, une opportunité de stage ou d'alternance ? Écrivez-moi.</p>
+
+         <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpqgygpy" method="POST">
+  <div class="form-group">
+    <label for="name" data-key="contact.form.nameLabel">Nom</label>
+    <input type="text" id="name" name="name" required data-key="contact.form.namePlaceholder" placeholder="Votre nom">
+  </div>
+  
+  <div class="form-group">
+    <label for="email" data-key="contact.form.emailLabel">Email</label>
+    <input type="email" id="email" name="email" required data-key="contact.form.emailPlaceholder" placeholder="vous@exemple.com">
+  </div>
+  
+  <div class="form-group">
+    <label for="message" data-key="contact.form.messageLabel">Message</label>
+    <textarea id="message" name="message" rows="5" required data-key="contact.form.messagePlaceholder" placeholder="Votre message..."></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn--gradient">
+    <span data-key="contact.form.submit">Envoyer le message</span> <i class="fa-solid fa-paper-plane"></i>
+  </button>
+  
+  <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+</form>
+        </div>
+
+        <div class="contact-links reveal">
+          <a href="mailto:bajji.abderrahim@gmail.com" class="contact-links__item">
+            <span class="contact-links__icon"><i class="fa-solid fa-envelope"></i></span>
+            <span class="contact-links__text">
+              <span class="contact-links__label">Email</span>
+              <span class="contact-links__value">bajji.abderrahim@gmail.com</span>
+            </span>
+          </a>
+
+          <a href="tel:+212614309397" class="contact-links__item">
+            <span class="contact-links__icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="contact-links__text">
+              <span class="contact-links__label" data-key="contact.links.phone">Téléphone</span>
+              <span class="contact-links__value">+212 614-309397</span>
+            </span>
+          </a>
+
+          
+          <a href="https://www.linkedin.com/in/abderrahim-bajji-2667522a3/" target="_blank" rel="noopener" class="contact-links__item">
+            <span class="contact-links__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+            <span class="contact-links__text">
+              <span class="contact-links__label">LinkedIn</span>
+              <span class="contact-links__value">bajji abderrahim</span>
+            </span>
+          </a>
+
+          <a href="https://github.com/xabde" target="_blank" rel="noopener" class="contact-links__item">
+            <span class="contact-links__icon"><i class="fa-brands fa-github"></i></span>
+            <span class="contact-links__text">
+              <span class="contact-links__label">GitHub</span>
+              <span class="contact-links__value">xabde</span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__text">© <span id="year"></span> Bajji Abderrahim — <span data-key="footer.tagline"></span></p>
+      <div class="footer__socials">
+        <a href="https://github.com/xabde" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abderrahim-bajji-2667522a3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:bajji.abderrahim@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <button class="footer__top" id="backToTop" data-key-aria="aria.backToTop" aria-label="Retour en haut de page">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
